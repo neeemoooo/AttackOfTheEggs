@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kings&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+      @apply !uppercase;
+    }
+    
+    body {
+      @apply font-mainFont;
+    }
+}
+
+@layer components {
+    .falling-egg {
+        position:absolute;
+        top:-40%;
+        animation:fallingEgg 2s forwards linear;
+    }
+}
+
+@keyframes fallingEgg { 
+   100%{
+    top:100%;
+   } 
+}
